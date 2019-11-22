@@ -3,6 +3,8 @@ import './App.css';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
+import Data from './Data';
+import Logo from './img/tinified.png';
 
 class Portfolio extends React.Component {
 
@@ -41,7 +43,7 @@ class Portfolio extends React.Component {
               <li><Link
                 activeClass='active'
                 className='links'
-                to='about'
+                to='aboutMe'
                 spy={true}
                 smooth={true}
                 duration={800}>About</Link></li>
@@ -51,6 +53,7 @@ class Portfolio extends React.Component {
                 className='links'
                 to='contact'
                 spy={true}
+                smooth={true}
                 duration={800}>Contact</Link></li>
             </ul>
           </Fade>
@@ -62,6 +65,31 @@ class Portfolio extends React.Component {
             <h2>System developer with focus on mobile units.</h2>
             <h2>Sweden.</h2>
           </Fade>
+        </div>
+
+
+        <div className='aboutMeDiv'>
+          <h3 className='aboutMe'>About me.</h3>
+          <p className='about'>
+            {Data.about}
+          </p>
+        </div>
+
+        <div className='myProjectsDiv'>
+          <h3 className='aboutProject'>Working experience.</h3>
+          <p className='myProjects'>
+            {Data.myProjects}
+          </p>
+          <div className='imageDiv'>
+            <img className='myliImage' src={Logo} alt='Unsplash' />
+          </div>
+        </div>
+
+        <div className='contactMeDiv'>
+          <h3 className='contactMe'>Contact information:</h3>
+          <p className='contact'>
+            {Data.contact}
+          </p>
         </div>
 
       </div>
