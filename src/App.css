@@ -5,21 +5,25 @@ body {
   text-decoration: none;
   color: #8C8C8C;
 }
+
 .App ul {
   list-style-type: none;
-  margin-top: 5%;
+  text-align: end;
   z-index: 10;
   top: 0;
+  height: 10vh;
   position: fixed;
-  right: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding-top: 2em;
 }
+
 .App li {
   font-size: 24px;
   list-style-type: none;
   display: inline;
-  margin: 10px;
+  margin-right: 100px;
 }
-
 
 .links:hover{
   color: black;
@@ -34,46 +38,49 @@ body {
   color: #5C5C5C;
   font-family: Geneva;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20vh;
 }
 
 .about {
-margin: 30px;
+margin: 50px;
 line-height: 1.5em;
 }
 
 .aboutMe {
-margin: 30px;
+margin: 50px;
 }
 
 .aboutMeDiv {
   flex: 1;
 }
 
-.myProjectsDiv {
-  flex: 1;
-}
 .aboutProject {
-  margin: 30px;
+  margin: 50px;
 }
 
 .myProjects {
-  margin: 30px;
+  margin: 50px;
   line-height: 1.5em;
 }
+
+.myProjectsDiv {
+flex: 1;
+}
+
+.contact {
+  margin: 50px;
+  text-align: center;
+}
+
+.contactMe {
+  text-align: center;
+  margin: 50px;
+}
+
 
 .contactMeDiv {
   flex: 1;
 }
-
-.contactMe {
-  margin: 30px;
-}
-
-.contact {
-  margin: 30px;
-}
-
 .imageDiv {
   text-align: center;
 }
@@ -81,4 +88,9 @@ margin: 30px;
 .myliImage {
   height: 40vh;
   width: 20vw;
+}
+
+.myliInfo {
+  margin: 50px;
+  text-align: center;
 }

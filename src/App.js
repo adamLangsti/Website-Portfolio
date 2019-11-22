@@ -30,37 +30,41 @@ class Portfolio extends React.Component {
     return (
       <div className="App">
         <nav>
-          <Fade right>
+          <Fade>
             <ul>
-              <li><Link
-                activeClass='active'
-                className='links'
-                to='home'
-                spy={true}
-                smooth={true}
-                duration={800}>Home</Link></li>
+              <li>
+                <Link
+                  onClick={this.scrollToTop}
+                  activeClass='active'
+                  className='links'
+                  to='home'
+                  spy={true}
+                  smooth={true}
+                  duration={800}>Home</Link></li>
 
-              <li><Link
-                activeClass='active'
-                className='links'
-                to='aboutMe'
-                spy={true}
-                smooth={true}
-                duration={800}>About</Link></li>
+              <li>
+                <Link
+                  activeClass='active'
+                  className='links'
+                  to='aboutMe'
+                  spy={true}
+                  smooth={true}
+                  duration={800}>About</Link></li>
 
-              <li><Link
-                activeClass='active'
-                className='links'
-                to='contact'
-                spy={true}
-                smooth={true}
-                duration={800}>Contact</Link></li>
+              <li>
+                <Link
+                  activeClass='active'
+                  className='links'
+                  to='contact'
+                  spy={true}
+                  smooth={true}
+                  duration={1500}>Contact</Link></li>
             </ul>
           </Fade>
         </nav>
 
         <div className='headLine'>
-          <Fade left>
+          <Fade clear>
             <h1>Adam Lang.</h1>
             <h2>System developer with focus on mobile units.</h2>
             <h2>Sweden.</h2>
@@ -82,6 +86,9 @@ class Portfolio extends React.Component {
           </p>
           <div className='imageDiv'>
             <img className='myliImage' src={Logo} alt='Unsplash' />
+            <h4 className='myliInfo'>
+              {Data.myli}</h4>
+              <a href='http://www.myli.se/' target='blank'> www.myli.se</a> 
           </div>
         </div>
 
