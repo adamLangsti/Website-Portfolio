@@ -53,7 +53,9 @@ body {
 
 .aboutMeDiv {
     flex: 1;
-    margin: 15em;
+    margin-left: 15em;
+    margin-right: 15em;
+    margin-bottom: 30vh;
 }
 
 .aboutProject {
@@ -67,11 +69,56 @@ body {
 
 .myProjectsDiv {
     flex: 1;
-    margin: 15em;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+.imageDiv {
+    text-align: center;
+    margin-bottom: 20vh;
+}
+.img-splash {
+    float: left;
+    margin: 10px;
+}
+
+.Logo {
+    height: 600px;
+    width: 20em;
+    margin: 15px;
+}
+.Myli {
+    height: 600px;
+    width: 20em;
+    margin: 15px;
+
+}
+
+.splashDescription {
+    position: absolute;
+    margin-left: 45em;
+    margin-right: 15em;
+}
+
+.homepageDescription {
+    position: absolute;
+    margin-left: 62.5em;
+    margin-right: 15em;
+}
+
+.myliInfo {
+    text-align: center;
+    line-height: 1.5em;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+.myliWebsiteLink {
+    padding-top: 2em;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .contact {
-    margin: 50px;
     text-align: center;
 }
 
@@ -82,37 +129,12 @@ body {
 
 .contactMeDiv {
     flex: 1;
+    margin-top: 10em;
+    padding-bottom: 3em;
 }
 
-.imageDiv {
-    margin: 10vh;
-    float: left;
-    width: 35%;
-}
 
-.imageDivHomeScreen {
-    text-align: center;
-    margin: 10vh;
-}
 
-.myliImage {
-    height: 80vh;
-    width: 30vw;
-}
-
-.myliHomePageImage {
-    height: 80vh;
-    width: 30vw;
-}
-
-.myliInfo {
-    text-align: center;
-    line-height: 1.5em;
-    margin-left: 20em;
-    margin-right: 20em;
-}
-
-.myliWebsiteLink {
-    text-align: center;
-    font-size: 2rem;
+@media only screen and (min-width: 768px) {
+    
 }

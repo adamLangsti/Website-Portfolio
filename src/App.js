@@ -89,19 +89,21 @@ class Portfolio extends React.Component {
             <p className='myProjects'>
               {Data.myProjects}
             </p>
-            <div className='imageDiv'>
-              <img className='myliImage' src={Logo} alt='Unsplash' />
-            </div>
           </Fade>
         </div>
 
-        <div className='imageDivHomeScreen'>
-              <img className='myliHomePageImage' src={Myli} alt='MyliApp' />
-            </div>
-
-        <div>
+        <div className='imageDiv'>
           <Fade>
-            <h4 className='myliInfo'>{Data.myli}</h4>
+            <img className='Logo' src={Logo} alt='Unsplash' />
+            <img className='Myli' src={Myli} alt='myliApp' />
+            <p className='homepageDescription'>{Data.homepage}</p>
+            <p className='splashDescription'>{Data.splash}</p>
+          </Fade>
+        </div>
+
+        <div className='myliInfo'>
+          <Fade>
+            <h4 className='myliInfo1'>{Data.myli}</h4>
           </Fade>
         </div>
 
