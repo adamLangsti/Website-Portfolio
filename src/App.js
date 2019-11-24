@@ -5,6 +5,7 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } f
 import Fade from 'react-reveal/Fade';
 import Data from './Data';
 import Logo from './img/tinified.png';
+import Myli from './img/myliApp.png';
 
 class Portfolio extends React.Component {
 
@@ -61,10 +62,11 @@ class Portfolio extends React.Component {
                   duration={1500}>Contact</Link></li>
             </ul>
           </Fade>
+
         </nav>
 
         <div className='headLine'>
-          <Fade clear>
+          <Fade>
             <h1>Adam Lang.</h1>
             <h2>System developer with focus on mobile units.</h2>
             <h2>Sweden.</h2>
@@ -73,30 +75,49 @@ class Portfolio extends React.Component {
 
 
         <div className='aboutMeDiv'>
-          <h3 className='aboutMe'>About me.</h3>
-          <p className='about'>
-            {Data.about}
-          </p>
+          <Fade>
+            <h3 className='aboutMe'>About me.</h3>
+            <p className='about'>
+              {Data.about}
+            </p>
+          </Fade>
         </div>
 
         <div className='myProjectsDiv'>
-          <h3 className='aboutProject'>Working experience.</h3>
-          <p className='myProjects'>
-            {Data.myProjects}
-          </p>
-          <div className='imageDiv'>
-            <img className='myliImage' src={Logo} alt='Unsplash' />
-            <h4 className='myliInfo'>
-              {Data.myli}</h4>
-              <a href='http://www.myli.se/' target='blank'> www.myli.se</a> 
-          </div>
+          <Fade>
+            <h3 className='aboutProject'>Experience as an intern.</h3>
+            <p className='myProjects'>
+              {Data.myProjects}
+            </p>
+            <div className='imageDiv'>
+              <img className='myliImage' src={Logo} alt='Unsplash' />
+            </div>
+          </Fade>
+        </div>
+
+        <div className='imageDivHomeScreen'>
+              <img className='myliHomePageImage' src={Myli} alt='MyliApp' />
+            </div>
+
+        <div>
+          <Fade>
+            <h4 className='myliInfo'>{Data.myli}</h4>
+          </Fade>
+        </div>
+
+        <div className='myliWebsiteLink'>
+          <Fade>
+            <a href='http://www.myli.se/' target='blank'> www.myli.se</a>
+          </Fade>
         </div>
 
         <div className='contactMeDiv'>
-          <h3 className='contactMe'>Contact information:</h3>
-          <p className='contact'>
-            {Data.contact}
-          </p>
+          <Fade>
+            <h3 className='contactMe'>Contact information:</h3>
+            <p className='contact'>
+              {Data.contact}
+            </p>
+          </Fade>
         </div>
 
       </div>
