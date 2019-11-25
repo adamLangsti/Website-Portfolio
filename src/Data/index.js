@@ -20,6 +20,7 @@ export default {
         'smoking or drinking before and after surgery within a span of 8 weeks. For more information about this exiting ' +
         'project please dont hesitate to visit their website below.',
     contact: 'Adam.Lang-1@hotmail.com',
+    linkedin: 'Find me on LinkedIn: ',
     splash: 'Splashscreen for Myli',
     homepage: 'Homepage of the Myli app (Dark theme)'
 }

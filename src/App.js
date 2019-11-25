@@ -119,9 +119,11 @@ class Portfolio extends React.Component {
         <div className='contactMeDiv'>
           <Fade>
             <h3 className='contactMe'>Contact information:</h3>
-            <p className='contact'>
-              {Data.contact}
-            </p>
+            <p className='contact'>{Data.contact}</p>
+            <p className='linkedInContact'>{Data.linkedin}
+              <a href="https://www.linkedin.com/in/adam-lang-b980b6a4/"
+                target="_blank"
+                rel="stylesheet" class="fa fa-linkedin"></a></p>
           </Fade>
         </div>
 
