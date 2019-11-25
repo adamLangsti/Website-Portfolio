@@ -32,7 +32,7 @@ class Portfolio extends React.Component {
       <div className="App">
         <nav>
           <Fade>
-            <ul>
+            <ul id="header">
               <li>
                 <Link
                   onClick={this.scrollToTop}
@@ -47,7 +47,7 @@ class Portfolio extends React.Component {
                 <Link
                   activeClass='active'
                   className='links'
-                  to='aboutMe'
+                  to='aboutContainer'
                   spy={true}
                   smooth={true}
                   duration={800}>About</Link></li>
@@ -73,23 +73,26 @@ class Portfolio extends React.Component {
           </Fade>
         </div>
 
-
-        <div className='aboutMeDiv'>
-          <Fade>
-            <h3 className='aboutMe'>About me.</h3>
-            <p className='about'>
-              {Data.about}
-            </p>
-          </Fade>
+        <div id='aboutContainer'>
+          <div className='aboutMeDiv'>
+            <Fade>
+              <h3 className='aboutMe'>About me.</h3>
+              <p className='about'>
+                {Data.about}
+              </p>
+            </Fade>
+          </div>
         </div>
 
-        <div className='myProjectsDiv'>
-          <Fade>
-            <h3 className='aboutProject'>Experience as an intern.</h3>
-            <p className='myProjects'>
-              {Data.myProjects}
-            </p>
-          </Fade>
+        <div id='projectsContainer'>
+          <div className='myProjectsDiv'>
+            <Fade>
+              <h3 className='aboutProject'>Experience as an intern.</h3>
+              <p className='myProjects'>
+                {Data.myProjects}
+              </p>
+            </Fade>
+          </div>
         </div>
 
         <div className='imageDiv'>
