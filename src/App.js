@@ -126,7 +126,7 @@ class Portfolio extends React.Component {
                 target="_blank"
                 rel="stylesheet" class="fa fa-linkedin"></a>
 
-              <a href="https://www.linkedin.com/in/adam-lang-b980b6a4/"
+              <a href="https://github.com/adamLangsti"
                 target='blank'
                 rel='stylesheet' class='fa fa-github'></a>
             </p>
