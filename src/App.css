@@ -151,7 +151,7 @@ padding: 3em;
     text-align: center;
 }
 .fa {
-  padding: 10px;
+  padding: 6px;
   font-size: 30px;
   width: 30px;
   text-align: center;
@@ -161,11 +161,21 @@ padding: 3em;
 .fa-linkedin {
     background: #007bb5;
     color: white;
-    border-radius: 40px;
+    border-radius: 30px;
     text-align: center;
     justify-content: center;
+    margin: 10px;
+}
 
-  }
+.fa-github {
+    background: #6e5494;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    
+}
 
 @media (max-width: 768px) {
    .aboutMeDiv{
