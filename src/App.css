@@ -106,15 +106,12 @@ padding: 3em;
 }
 
 .splashDescription {
-    position: absolute;
-    margin-left: 45em;
-    margin-right: 15em;
+    text-align: center;
 }
 
 .homepageDescription {
-    position: absolute;
-    margin-left: 67em;
-    margin-right: 15em;
+    text-align: center;
+    display: inline;
 }
 
 .myliInfo {

@@ -99,8 +99,9 @@ class Portfolio extends React.Component {
           <Fade>
             <img className='Logo' src={Logo} alt='Unsplash' />
             <img className='Myli' src={Myli} alt='myliApp' />
-            <p className='homepageDescription'>{Data.homepage}</p>
+
             <p className='splashDescription'>{Data.splash}</p>
+            <p className='homepageDescription'>{Data.homepage}</p>
           </Fade>
         </div>
 
