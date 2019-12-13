@@ -69,7 +69,6 @@ class Portfolio extends React.Component {
           <Fade>
             <h1>Adam Lang.</h1>
             <h2>System developer with focus on mobile units.</h2>
-            <h2>Sweden.</h2>
           </Fade>
         </div>
 
