@@ -102,9 +102,10 @@ class Portfolio extends React.Component {
         </div>
 
         <div id='floaters'>
-          <p className='homepageLightDescription'>{Data.homepageLight}</p>
-          <p className='homepageDescription'>{Data.homepage}</p>
+          <p className='homepageDescription'>{Data.homepageForMyli}</p>
         </div>
+
+
 
         <div className='myliInfo'>
           <Fade>

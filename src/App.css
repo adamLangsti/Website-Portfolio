@@ -99,17 +99,10 @@ padding: 3em;
 }
 #floaters {
     margin-bottom: 10em;
-    margin-left: 37vw;
-
-}
-
-.homepageLightDescription {
-    float: left;
 }
 
 .homepageDescription {
-    float: left;
-    padding-left: 6.5em;
+    text-align: center;
 }
 
 .myliInfo {
@@ -212,13 +205,7 @@ display: inline;
 }
 .homepageDescription{
     position: absolute;
-    width: 30%;
-    margin-left: 65px;
-}
-.homepageLightDescription{
-    position: absolute;
-    right: 20em;
-    width: 41.5%;
+    right: 15%;
 }
 
 
@@ -230,16 +217,9 @@ display: inline;
         display: inline-block;
         margin-bottom: 10em;
     }
-
     .homepageDescription{
         position: absolute;
-        right: 139px;
-        width: 30%;
-        top: 210em;
-    }
-    .homepageLightDescription{
-        position: absolute;
-        right: 6em;
+        left: 15%;
     }
 }
 
@@ -251,5 +231,9 @@ display: inline;
 
     #header {
         display: none;
+    }
+
+    .homepageDescription{
+        position: absolute;
     }
 }
