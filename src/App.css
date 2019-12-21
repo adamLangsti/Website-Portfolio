@@ -207,21 +207,39 @@ display: inline;
 }
 
 #floaters {
-    margin: 50px;
-    padding-left: 5em;
+    margin-bottom: 50px;
+
 }
+.homepageDescription{
+    position: absolute;
+    width: 30%;
+    margin-left: 65px;
+}
+.homepageLightDescription{
+    position: absolute;
+    right: 20em;
+    width: 41.5%;
+}
+
 
 }
 
 @media (max-width: 375px) {
 
     #floaters {
-        padding-left: 2em;
+        display: inline-block;
+        margin-bottom: 10em;
     }
 
     .homepageDescription{
-        margin-right: 2em;
-        padding: 1px;
+        position: absolute;
+        right: 139px;
+        width: 30%;
+        top: 210em;
+    }
+    .homepageLightDescription{
+        position: absolute;
+        right: 6em;
     }
 }
 
