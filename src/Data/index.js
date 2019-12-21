@@ -21,6 +21,6 @@ export default {
         'project please dont hesitate to visit their website below.',
     contact: 'Adam.Lang-1@hotmail.com',
     socialMedia: 'Find me on LinkedIn or GitHub: ',
-    splash: 'Splashscreen for Myli',
-    homepage: 'Homepage of the Myli app (Dark theme)'
+    homepageLight: 'Myli homepage, light theme.',
+    homepage: 'Myli homepage, dark theme.'
 }

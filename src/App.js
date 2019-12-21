@@ -4,8 +4,8 @@ import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 import Data from './Data';
-import Logo from './img/tinified.png';
 import Myli from './img/myliApp.png';
+import MyliLight from './img/myliAppLightTheme.png';
 
 class Portfolio extends React.Component {
 
@@ -96,12 +96,14 @@ class Portfolio extends React.Component {
 
         <div className='imageDiv'>
           <Fade>
-            <img className='Logo' src={Logo} alt='Unsplash' />
+            <img className='MyliLight' src={MyliLight} alt='MyliLightTheme' />
             <img className='Myli' src={Myli} alt='myliApp' />
-
-            <p className='splashDescription'>{Data.splash}</p>
-            <p className='homepageDescription'>{Data.homepage}</p>
           </Fade>
+        </div>
+
+        <div id='floaters'>
+          <p className='homepageLightDescription'>{Data.homepageLight}</p>
+          <p className='homepageDescription'>{Data.homepage}</p>
         </div>
 
         <div className='myliInfo'>

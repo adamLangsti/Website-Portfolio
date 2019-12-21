@@ -86,32 +86,30 @@ padding: 3em;
 
 .imageDiv {
     text-align: center;
-    margin-bottom: 20vh;
-}
-.img-splash {
-    float: left;
-    margin: 10px;
+
 }
 
-.Logo {
+.MyliLight {
     height: 600px;
-    width: 30em;
-    margin: 15px;
+    margin: 10px;
 }
 .Myli {
     height: 600px;
-    width: 20em;
-    margin: 15px;
+    margin: 10px;
+}
+#floaters {
+    margin-bottom: 10em;
+    margin-left: 37vw;
 
 }
 
-.splashDescription {
-    text-align: center;
+.homepageLightDescription {
+    float: left;
 }
 
 .homepageDescription {
-    text-align: center;
-    display: inline;
+    float: left;
+    padding-left: 6.5em;
 }
 
 .myliInfo {
@@ -175,40 +173,65 @@ padding: 3em;
 }
 
 @media (max-width: 768px) {
-   .aboutMeDiv{
-       display: inline;
-   }
-   .aboutMe{
-       display: inline;
-   }
-   #projectsContainer {
-       display: block;
-   }
-   .myProjectsDiv{
-       display: inline;
-   }
-   .Logo{
-       height: 400px;
-       width: 20em;
-   }
 
-   .myliInfo{
-       display: inline;
-   }
-   .contactMeDiv{
-    margin-bottom: 10em;
-   }
-   .headLine{
-       display: inline;
-   }
-   .splashDescription {
-    margin-left: 1em;
-    margin-right: 1em;
+#header{
+display: none;
+}
+
+.aboutMeDiv{
+display: inline;
+}
+
+#aboutContainer {
+    display: block;
+}
+
+#projectsContainer {
+display: block;
+}
+
+.myProjectsDiv{
+display: inline;
+}
+
+.myliInfo{
+display: inline;
+}
+
+.contactMeDiv{
+margin-bottom: 10em;
+}
+
+.headLine{
+display: inline;
+}
+
+#floaters {
+    margin: 50px;
+    padding-left: 5em;
+}
 
 }
 
-    .homepageDescription {
-    margin-left: 10em;
-    margin-right: 1em;
+@media (max-width: 375px) {
+
+    #floaters {
+        padding-left: 2em;
+    }
+
+    .homepageDescription{
+        margin-right: 2em;
+        padding: 1px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #floaters{
+        margin-left: 16.5em;
+    }
+
+    #header {
+        display: none;
     }
 }
