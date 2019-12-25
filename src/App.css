@@ -205,7 +205,8 @@ display: inline;
 }
 .homepageDescription{
     position: absolute;
-    right: 15%;
+    left: 0;
+    right: 0;
 }
 
 
@@ -219,7 +220,8 @@ display: inline;
     }
     .homepageDescription{
         position: absolute;
-        left: 15%;
+        left: 0;
+        right: 0;
     }
 }
 
@@ -235,5 +237,7 @@ display: inline;
 
     .homepageDescription{
         position: absolute;
+        left: 0;
+        right: 0;
     }
 }
