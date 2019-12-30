@@ -2,12 +2,12 @@
 export default {
     title: '',
     about: 'I study at a vocational university in Sweden, Stockholm Institute of Technology' +
-        ' and the main focus in this course is to give its students a wide variety of different experiences ' +
+        ' and the main focus in this program is to give its students a wide variety of different experiences ' +
         'in the programming field. During my time here I have strengthened my knowledge in many areas regarding ' +
-        'UX/UI, JavaScript, HTML5 & CSS, Java and Swift. I have also acquired insight in database management, ' +
+        'UX/UI, JavaScript, HTML5 & CSS, Java and Swift, to name a few. I have also acquired insight in database management, ' +
         'working with API:s and I just recently completed the first out of two internships, with the latter ' +
         'starting in february 2020. Even though I have enjoyed working with developing apps, I have a stronger ' +
-        'desire to work with front end after graduating.',
+        'desire to work with front end, building websites after graduating.',
 
     myProjects: 'During my time as an  intern in autumn 2019 I worked at a company called MyIndicators, a company ' +
         'that works with digital healtcare. During my two months at MyIndicators I worked with the framework React Native ' +
@@ -21,5 +21,5 @@ export default {
         'project please dont hesitate to visit their website below.',
     contact: 'Adam.Lang-1@hotmail.com',
     socialMedia: 'Find me on LinkedIn or GitHub: ',
-    homepageForMyli: 'Homepage for the Myli application, light theme left and dark theme right. ',
+    homepageForMyli: 'Homepage for the Myli application in light and dark mode.',
 }
