@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import App from '../App.css';
-import logo from '../images/me.jpg';
-import Data from '../Data/index';
-import ContactForm from './ContactForm';
-import SocialMedia from './SocialMedia';
-import { FaLinkedin } from 'react-icons/fa';
-import gif from '../images/premierleague1.gif';
+import React, { useState } from "react";
+import App from "../App.css";
+import logo from "../images/me.jpg";
+import Data from "../Data/index";
+import ContactForm from "./ContactForm";
+import SocialMedia from "./SocialMedia";
+import { FaLinkedin } from "react-icons/fa";
+import gif from "../images/premierleague1.gif";
 
 const Portfolio = () => {
   return (
@@ -20,12 +20,25 @@ const Portfolio = () => {
 
       <section className="s2">
         <div className="main-container">
-
-          <h2><strong>About</strong></h2>
+          <h2>
+            <strong>About</strong>
+          </h2>
           <img id="profile_pic" alt="" src={logo} />
-          <p>{Data.about}</p>
+          <h3 id="quote">
+            I am a software developer who studied app development in Stockholm
+            where I graduated in May 2020. <br /> I like to build projects to
+            keep my brain going and learn new things.
+            <br />
+            <br /> I am currently working as a web developer at{" "}
+            <a href="https://animech.com/en/" target="_blank">
+              Animech
+            </a>{" "}
+            where I'm working with React and a WordPress
+            <br /> backend and will in the future start working with 3D
+            configuration.
+          </h3>
           <div id="line-divider" />
-          <h3>Skills</h3>
+          <h4>Skills</h4>
 
           <div id="skills-container">
             <ul>
@@ -49,23 +62,21 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section className="s3">
+      {/* <section className="s3">
         <div className="main-container">
-          <div className="app-description">
-            <img src={gif} id="gif" />
-            <p>{Data.projects}</p>
-          </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="s4">
         <div className="main-container">
-          <h3 style={{ textAlign: "center" }}>Find me on LinkedIn or send me an email.</h3>
+          <h3 style={{ textAlign: "center" }}>
+            Find me on LinkedIn or send me an email.
+          </h3>
           <SocialMedia />
         </div>
       </section>
     </>
   );
-}
+};
 
 export default Portfolio;
