@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import App from "../App.css";
 import logo from "../images/me.jpg";
-import Data from "../Data/index";
 import ContactForm from "./ContactForm";
 import SocialMedia from "./SocialMedia";
 import { FaLinkedin } from "react-icons/fa";
