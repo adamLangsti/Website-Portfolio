@@ -7,16 +7,16 @@ import { about } from '../About';
 const Portfolio = () => {
     return (
         <>
-            <section className='s1'>
-                <div className='main-container'>
-                    <div className='main-container-greeting-wrapper'>
+            <header className='header'>
+                <div className='header-container'>
+                    <div className='header-greeting-wrapper'>
                         <h1>Hi, I'm Adam Lang</h1>
                     </div>
                 </div>
-            </section>
+            </header>
 
-            <section className='s2'>
-                <div className='main-container'>
+            <section className='content'>
+                <div className='content-container'>
                     <h2>
                         <strong>About</strong>
                     </h2>
@@ -25,7 +25,7 @@ const Portfolio = () => {
                     <hr />
                     <h4>Skills</h4>
 
-                    <div className='main-container-skills-container'>
+                    <div className='content-skills'>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -47,7 +47,7 @@ const Portfolio = () => {
                 </div>
             </section>
 
-            <section className='s4'>
+            <section className='footer'>
                 <div className='main-container'>
                     <h3>Find me on LinkedIn or send me an email.</h3>
                     <SocialMedia />

@@ -1,0 +1,17 @@
+@function set-color($color) {
+  @if (lightness($color) > 40%) {
+    @return $primary-color;
+  } @else {
+    @return $secondary-color;
+  }
+}
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+@mixin theme($dark-theme: true) {
+  @if $dark-theme {
+    background-color: darken($primary-color, 100%);
+    color: lighten($secondary-color, 100%);
+  }
+}

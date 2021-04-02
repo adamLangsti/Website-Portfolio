@@ -1,13 +1,10 @@
-$mainColor:#eaeaea;
-$secondaryColor: #fff;
-
-$borderColor: #c1c1c1;
-$blueColor: #0077b5;
-$textColor: #292929;
-$secondaryText: #4b5156;
-
 $sectionHeight: 650px;
-$buttonColor: #000;
-
 $animatedHeight: 600px;
 $animatedWidth: 300px;
+$mobile-break: 800px;
+$font-weights: (
+  'mini': 100,
+  'regular': 400,
+  'medium': 500,
+  'bold': 700
+);

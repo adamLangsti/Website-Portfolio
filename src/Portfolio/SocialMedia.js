@@ -8,7 +8,7 @@ const SocialMedia = () => {
                 href='https://www.linkedin.com/in/adam-lang-b980b6a4/'
                 target='_blank'
                 rel='noopener noreferrer'>
-                <FaLinkedin id='linkedIn-contact' />
+                <FaLinkedin className='linkedIn-contact' />
             </a>
             <a
                 href='mailto:adam.lang-1@hotmail.com'

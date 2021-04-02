@@ -1,4 +1,7 @@
 @import 'config';
+@import 'colors';
+@import 'mixin';
+
 html,
 body {
   padding: 0;
@@ -11,12 +14,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: $textColor;
+  //   color: set-color($secondary-color);
   font-family: 'Russo One', sans-serif;
 }
 
 h1 {
   font-size: 56px;
+  font-weight: weight('mini');
 }
 h2 {
   font-size: 36px;
@@ -40,7 +44,7 @@ span,
 label,
 input,
 textarea {
-  color: $secondaryText;
+  //   color: set-color($secondary-color);
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -53,16 +57,39 @@ ul {
   list-style: none;
 }
 
-.s1 {
+.header {
   background-color: $mainColor;
   border-bottom: 1px solid $borderColor;
   overflow: hidden;
+  &-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &-greeting-wrapper {
+    display: flex;
+    justify-content: center;
+    border: 2px;
+    min-height: 10em;
+  }
 }
 
-.s2 {
-  background-color: $secondaryColor;
+.content {
+  @include theme(false);
   border-bottom: 1px solid $borderColor;
   height: $sectionHeight;
+  &-container {
+    @extend .header-container;
+  }
+  &-skills {
+    display: flex;
+    align-items: center;
+    background-color: #edf7f6;
+    width: 50%;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    li {
+      text-align: left;
+    }
+  }
   img {
     display: block;
     width: 200px;
@@ -73,37 +100,10 @@ ul {
   }
 }
 
-.s3 {
-  background-color: $mainColor;
-}
-
-.s4 {
-  background-color: $secondaryColor;
-}
-
-.main-container {
-  width: 1200px;
-  margin: 0 auto;
+.footer {
+  @include theme(false);
   h3 {
     text-align: center;
-  }
-  &-greeting-wrapper {
-    display: flex;
-    justify-content: center;
-    border: 2px;
-    min-height: 10em;
-  }
-  &-skills-container {
-    display: flex;
-    align-items: center;
-    background-color: #edf7f6;
-    width: 50%;
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    li {
-      text-align: left;
-    }
   }
 }
 
@@ -140,18 +140,11 @@ hr {
   }
 }
 
-#linkedIn-contact {
+.linkedIn-contact {
   margin: 3px;
   height: 40px;
   width: 40px;
-}
-
-#linkedIn-contact:hover {
-  color: #17a2b8;
-}
-
-@media screen and (max-width: 1200px) {
-  .main-container {
-    width: 95%;
+  &:hover {
+    color: #17a2b8;
   }
 }
