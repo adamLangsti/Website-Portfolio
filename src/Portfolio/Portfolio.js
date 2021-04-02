@@ -49,7 +49,7 @@ const Portfolio = () => {
 
             <section className='footer'>
                 <div className='main-container'>
-                    <h3>Find me on LinkedIn or send me an email.</h3>
+                    <h3>Find me on LinkedIn, GitHub or send me an email.</h3>
                     <SocialMedia />
                 </div>
             </section>

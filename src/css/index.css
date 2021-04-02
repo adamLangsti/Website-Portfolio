@@ -11,7 +11,7 @@ body {
   }
   html p,
   body p {
-    max-width: 50%;
+    max-width: 60%;
   }
   html .content,
   body .content {
@@ -104,7 +104,6 @@ ul {
 }
 
 .content-skills {
-  background-color: #edf7f6;
   display: flex;
   align-items: center;
   width: 50%;
@@ -143,33 +142,31 @@ hr {
   border-radius: 5px;
   background-color: #eaeaea;
   margin-bottom: 50px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.contact-form-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #158e00;
-  border-radius: 5px;
-  height: 25px;
-  padding: 5px;
-  margin: 5px;
-}
-
-.contact-form-btn:hover {
-  background-color: #4caf50;
-}
-
-.contact-form p[data-tag] {
-  color: #fff;
-}
-
-.linkedIn-contact {
+.contact-form .icon, .contact-form .icon-git, .contact-form .icon-mail {
   margin: 3px;
   height: 40px;
   width: 40px;
 }
 
-.linkedIn-contact:hover {
-  color: #17a2b8;
+.contact-form .icon:hover, .contact-form .icon-git:hover, .contact-form .icon-mail:hover {
+  color: #0078b4de;
+}
+
+.contact-form .icon-git {
+  color: #575757;
+}
+
+.contact-form .icon-git:hover {
+  color: #636363;
+}
+
+.contact-form .icon-mail {
+  color: #d89f02;
+}
+
+.contact-form .icon-mail:hover {
+  color: #d89f02d2;
 }
