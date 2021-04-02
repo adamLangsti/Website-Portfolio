@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import App from '../App.css';
+import '../css/index.css';
 import logo from '../images/me.jpg';
 import Data from '../Data/index';
 import ContactForm from './ContactForm';
 import SocialMedia from './SocialMedia';
 import { FaLinkedin } from 'react-icons/fa';
-import gif from '../images/premierleague1.gif';
 
 const Portfolio = () => {
   return (
@@ -22,7 +21,7 @@ const Portfolio = () => {
         <div className="main-container">
 
           <h2><strong>About</strong></h2>
-          <img id="profile_pic" alt="" src={logo} />
+          <img alt="pic" src={logo} />
           <p>{Data.about}</p>
           <div id="line-divider" />
           <h3>Skills</h3>
@@ -45,15 +44,6 @@ const Portfolio = () => {
               <li>Xamarin</li>
               <li>GIT</li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="s3">
-        <div className="main-container">
-          <div className="app-description">
-            <img src={gif} id="gif" />
-            <p>{Data.projects}</p>
           </div>
         </div>
       </section>
