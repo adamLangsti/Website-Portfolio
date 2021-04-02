@@ -13,13 +13,17 @@ body {
   body p {
     max-width: 60%;
   }
+  html h3,
+  body h3 {
+    max-width: 70%;
+  }
   html .content,
   body .content {
     height: 75vh;
   }
   html .footer,
   body .footer {
-    padding-top: 30px;
+    padding-top: 125px;
   }
 }
 
@@ -27,43 +31,8 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-  font-family: 'Russo One', sans-serif;
-}
-
-h1 {
-  font-size: 56px;
-  font-weight: 100;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 28px;
-}
-
-h4 {
-  font-size: 24px;
-}
-
 h5 {
-  font-size: 20px;
-}
-
-h6 {
-  font-size: 16px;
-}
-
-p,
-li,
-span,
-label,
-input,
-textarea {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Russo One', sans-serif;
 }
 
 a {
@@ -92,15 +61,29 @@ ul {
   min-height: 10em;
 }
 
-.content {
-  border-bottom: 1px solid #c1c1c1;
-  height: 650px;
+.header h1 {
+  font-size: 56px;
+  font-weight: 700;
 }
 
-@media (max-width: 1068px) {
-  .content {
-    flex-direction: column;
-  }
+.content {
+  border-bottom: 1px solid #c1c1c1;
+  height: 730px;
+}
+
+.content h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.content h3 {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.4rem;
+}
+
+.content h4 {
+  font-size: 24px;
 }
 
 .content-skills {
@@ -112,6 +95,7 @@ ul {
 
 .content-skills li {
   text-align: left;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .content img {
@@ -123,8 +107,9 @@ ul {
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.footer h3 {
+.footer h5 {
   text-align: center;
+  font-size: 28px;
 }
 
 hr {
@@ -164,9 +149,9 @@ hr {
 }
 
 .contact-form .icon-mail {
-  color: #d89f02;
+  color: #63a000;
 }
 
 .contact-form .icon-mail:hover {
-  color: #d89f02d2;
+  color: #70b600;
 }
