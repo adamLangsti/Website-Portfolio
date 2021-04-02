@@ -3,7 +3,7 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const SocialMedia = () => {
     return (
-        <div id='contact-form'>
+        <div className='contact-form'>
             <a
                 href='https://www.linkedin.com/in/adam-lang-b980b6a4/'
                 target='_blank'
@@ -13,8 +13,8 @@ const SocialMedia = () => {
             <a
                 href='mailto:adam.lang-1@hotmail.com'
                 rel='noopener noreferrer'
-                id='contact-btn'>
-                <p>E-mail</p>
+                className='contact-form-btn'>
+                <p data-tag>E-mail</p>
             </a>
         </div>
     );

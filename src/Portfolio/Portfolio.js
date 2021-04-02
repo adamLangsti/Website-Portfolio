@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../css/index.css';
 import logo from '../images/me.jpg';
-import Data from '../Data/index';
-import ContactForm from './ContactForm';
 import SocialMedia from './SocialMedia';
-import { FaLinkedin } from 'react-icons/fa';
+import { about } from '../About';
 
 const Portfolio = () => {
     return (
         <>
             <section className='s1'>
                 <div className='main-container'>
-                    <div className='greeting-wrapper'>
+                    <div className='main-container-greeting-wrapper'>
                         <h1>Hi, I'm Adam Lang</h1>
                     </div>
                 </div>
@@ -23,11 +21,11 @@ const Portfolio = () => {
                         <strong>About</strong>
                     </h2>
                     <img alt='pic' src={logo} />
-                    <p>{Data.about}</p>
-                    <div id='line-divider' />
+                    <p>{about}</p>
+                    <hr />
                     <h4>Skills</h4>
 
-                    <div id='skills-container'>
+                    <div className='main-container-skills-container'>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -51,9 +49,7 @@ const Portfolio = () => {
 
             <section className='s4'>
                 <div className='main-container'>
-                    <h3 style={{ textAlign: 'center' }}>
-                        Find me on LinkedIn or send me an email.
-                    </h3>
+                    <h3>Find me on LinkedIn or send me an email.</h3>
                     <SocialMedia />
                 </div>
             </section>
