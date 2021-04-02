@@ -4,6 +4,19 @@
 
 html,
 body {
+  @include theme(false);
+  @include mobile {
+    padding-left: 5%;
+    p {
+        max-width: 50%;
+    }
+    .content {
+        height: 75vh;
+    }
+    .footer {
+        padding-top: 30px;
+    }
+  }
   padding: 0;
   margin: 0;
 }
@@ -14,7 +27,6 @@ h3,
 h4,
 h5,
 h6 {
-  //   color: set-color($secondary-color);
   font-family: 'Russo One', sans-serif;
 }
 
@@ -44,7 +56,6 @@ span,
 label,
 input,
 textarea {
-  //   color: set-color($secondary-color);
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -58,7 +69,6 @@ ul {
 }
 
 .header {
-  background-color: $mainColor;
   border-bottom: 1px solid $borderColor;
   overflow: hidden;
   &-container {
@@ -74,18 +84,20 @@ ul {
 }
 
 .content {
-  @include theme(false);
+  @include mobile {
+    flex-direction: column;
+  }
   border-bottom: 1px solid $borderColor;
   height: $sectionHeight;
   &-container {
     @extend .header-container;
   }
   &-skills {
+    background-color: #edf7f6;
     display: flex;
     align-items: center;
-    background-color: #edf7f6;
     width: 50%;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.75);
     li {
       text-align: left;
     }
@@ -101,7 +113,6 @@ ul {
 }
 
 .footer {
-  @include theme(false);
   h3 {
     text-align: center;
   }

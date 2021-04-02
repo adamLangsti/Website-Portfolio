@@ -4,6 +4,25 @@ body {
   margin: 0;
 }
 
+@media (max-width: 1068px) {
+  html,
+  body {
+    padding-left: 5%;
+  }
+  html p,
+  body p {
+    max-width: 50%;
+  }
+  html .content,
+  body .content {
+    height: 75vh;
+  }
+  html .footer,
+  body .footer {
+    padding-top: 30px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -57,7 +76,6 @@ ul {
 }
 
 .header {
-  background-color: #eaeaea;
   border-bottom: 1px solid #c1c1c1;
   overflow: hidden;
 }
@@ -79,12 +97,18 @@ ul {
   height: 650px;
 }
 
+@media (max-width: 1068px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
 .content-skills {
+  background-color: #edf7f6;
   display: flex;
   align-items: center;
-  background-color: #edf7f6;
   width: 50%;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 .content-skills li {
