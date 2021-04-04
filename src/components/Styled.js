@@ -11,7 +11,7 @@ export const Page = styled.div`
 `;
 export const Toggle = styled.button`
     position: relative;
-    top: 95px;
+    top: 100px;
     right: 550px;
     cursor: pointer;
     border-radius: 100%;
