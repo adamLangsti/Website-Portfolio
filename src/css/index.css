@@ -30,6 +30,11 @@ body {
   body .footer {
     padding-top: 125px;
   }
+  html .toggle-btn,
+  body .toggle-btn {
+    position: relative;
+    top: 150px;
+  }
 }
 
 h1,
@@ -73,7 +78,7 @@ ul {
 
 .content {
   border-bottom: 1px solid #c1c1c1;
-  height: 730px;
+  height: 770px;
 }
 
 .content h2 {

@@ -21,7 +21,9 @@ const App = () => {
         <>
             <ThemeProvider theme={themes[theme]}>
                 <Page>
-                    <Toggle onClick={changeTheme}>{icon}</Toggle>
+                    <Toggle className='toggle-btn' onClick={changeTheme}>
+                        {icon}
+                    </Toggle>
                     <Portfolio />
                 </Page>
             </ThemeProvider>
