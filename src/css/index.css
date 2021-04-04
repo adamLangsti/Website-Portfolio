@@ -7,7 +7,12 @@ body {
 @media (max-width: 1068px) {
   html,
   body {
-    padding-left: 5%;
+    padding-left: 25%;
+  }
+  html h1,
+  body h1 {
+    text-align: left;
+    width: 100%;
   }
   html p,
   body p {

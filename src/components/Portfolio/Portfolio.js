@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/index.css';
-import logo from '../images/me.jpg';
+import '../../css/index.css';
+import logo from '../../images/me.jpg';
 import SocialMedia from './SocialMedia';
 import { about, stuff } from '../About';
 
