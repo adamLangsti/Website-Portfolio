@@ -4,9 +4,13 @@
 
 html,
 body {
-  @include theme(false);
+//   @include theme(false);
   @include mobile {
-    padding-left: 5%;
+    padding-left: 25%;
+    h1 {
+        text-align: left;
+        width: 100%;
+    }
     p {
       max-width: 60%;
     }
