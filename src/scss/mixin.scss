@@ -1,23 +1,21 @@
-@function set-color($color) {
-  @if (lightness($color) > 40%) {
-    @return $primary-color;
-  } @else {
-    @return $secondary-color;
-  }
-}
-@function weight($weight-name) {
-  @return map-get($font-weights, $weight-name);
-}
-
 @mixin theme($dark-theme: true) {
   @if $dark-theme {
     background-color: darken($primary-color, 100%);
     color: lighten($secondary-color, 100%);
   }
 }
+@mixin flex-center($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
 
+@mixin clamp-width {
+  width: clamp(500px, 65%, $content-width);
+}
 @mixin mobile {
-  @media (max-width: $mobile-break + 300px) {
+  @media (max-width: $content-width - 125px) {
     @content;
   }
 }

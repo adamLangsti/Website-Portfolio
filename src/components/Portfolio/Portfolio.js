@@ -39,7 +39,7 @@ const Portfolio = () => {
                             <li>Firebase</li>
                             <li>Object Oriented Programming</li>
                             <li>C#</li>
-                            <li>Java</li>
+                            <li>Node.js</li>
                             <li>GIT</li>
                         </ul>
                     </div>

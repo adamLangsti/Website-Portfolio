@@ -10,9 +10,9 @@ export const Page = styled.div`
     transition: all 0.5s ease;
 `;
 export const Toggle = styled.button`
-    position: relative;
+    position: absolute;
     top: 100px;
-    right: 550px;
+    left: 18%;
     cursor: pointer;
     border-radius: 100%;
     border: none;

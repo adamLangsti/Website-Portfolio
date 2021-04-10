@@ -1,31 +1,17 @@
 @import 'config';
 @import 'colors';
 @import 'mixin';
+@import 'functions';
 
 html,
 body {
-//   @include theme(false);
+  //   @include theme(false);
   @include mobile {
-    padding-left: 25%;
-    h1 {
+    .header {
+      h1 {
         text-align: left;
         width: 100%;
-    }
-    p {
-      max-width: 60%;
-    }
-    h3 {
-        max-width: 70%;
-    }
-    .content {
-      height: 75vh;
-    }
-    .footer {
-      padding-top: 125px;
-    }
-    .toggle-btn {
-        position: relative;
-        top: 150px;
+      }
     }
   }
   padding: 0;
@@ -50,6 +36,7 @@ ul {
 }
 
 .header {
+  @include clamp-width;
   border-bottom: 1px solid $border-color;
   overflow: hidden;
   &-container {
@@ -85,11 +72,12 @@ ul {
   }
   &-container {
     @extend .header-container;
+    @include clamp-width;
   }
   &-skills {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: clamp(500px, 50%, 100%);
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.75);
     li {
       text-align: left;
@@ -107,6 +95,7 @@ ul {
 }
 
 .footer {
+  @include clamp-width;
   h5 {
     text-align: center;
     font-size: 28px;
@@ -150,5 +139,21 @@ hr {
         color: #70b600;
       }
     }
+  }
+}
+// query to give footer space from content container
+@media screen and (max-width: 1563px) {
+  .content {
+    padding-bottom: 100px;
+  }
+}
+// query to give footer space from content container
+@media screen and(max-width: 884px) {
+  .content {
+    padding-bottom: 140px;
+  }
+  .footer {
+    @include flex-center(column);
+    margin: 0 auto;
   }
 }

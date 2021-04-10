@@ -1,0 +1,10 @@
+@function set-color($color) {
+    @if (lightness($color) > 40%) {
+      @return $primary-color;
+    } @else {
+      @return $secondary-color;
+    }
+  }
+  @function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+  }
