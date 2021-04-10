@@ -1,5 +1,5 @@
 export const about = [
-    `I am a software developer who studied in Stockholm where I graduated in May 2020.
+    `I am a software developer who studied in Stockholm where I graduated in 2020.
     I like to build projects to keep my brain going and learn new things.
     The React framework is something that I really enjoy working with and it's something that I 
     am using almost exclusively.
