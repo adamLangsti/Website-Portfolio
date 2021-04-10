@@ -57,6 +57,7 @@ ul {
 .content {
   border-bottom: 1px solid $border-color;
   height: $sectionHeight;
+  padding-bottom: 30px;
   h2 {
     font-weight: weight('bold');
     font-size: 36px;
@@ -149,7 +150,7 @@ hr {
 // query to give footer space from content container
 @media screen and(max-width: 884px) {
   .content {
-    padding-bottom: 235px;
+    padding-bottom: 50px;
   }
   .footer {
     @include flex-center(column);
