@@ -23,7 +23,6 @@ const App = () => {
                 <Page>
                     <Toggle
                         className='toggle-btn'
-                        data-toggled
                         onClick={changeTheme}>
                         {icon}
                     </Toggle>
