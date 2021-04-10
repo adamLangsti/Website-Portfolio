@@ -12,7 +12,7 @@
 }
 
 @mixin clamp-width {
-  width: clamp(500px, 65%, $content-width);
+  width: clamp(375px, 65%, $content-width);
 }
 @mixin mobile {
   @media (max-width: $content-width - 125px) {

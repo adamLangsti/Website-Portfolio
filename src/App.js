@@ -21,7 +21,10 @@ const App = () => {
         <>
             <ThemeProvider theme={themes[theme]}>
                 <Page>
-                    <Toggle className='toggle-btn' onClick={changeTheme}>
+                    <Toggle
+                        className='toggle-btn'
+                        data-toggled
+                        onClick={changeTheme}>
                         {icon}
                     </Toggle>
                     <Portfolio />
