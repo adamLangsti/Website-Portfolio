@@ -115,6 +115,50 @@
   color: #70b600;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #c1c1c1;
+  width: 100%;
+}
+
+.projects-links {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: clamp(375px, 65%, 1440px);
+}
+
+.projects h1 {
+  font-size: 36px;
+  width: clamp(375px, 65%, 1440px);
+}
+
+.projects h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  width: clamp(375px, 65%, 1440px);
+}
+
+.projects a {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ff9900;
+  text-shadow: 3px 1px 2px #292929;
+}
+
+.projects a:hover {
+  opacity: 0.9;
+  transform: translateX(1px);
+}
+
+.projects a:nth-child(2) {
+  color: #ff9900;
+  font-size: 30px;
+}
+
 html,
 body {
   padding: 0;
