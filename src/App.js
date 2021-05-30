@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Portfolio from './components/Portfolio/Portfolio';
+import Portfolio from './components/Portfolio';
 import { ThemeProvider } from 'styled-components';
 import { themes } from './components/Themes';
 import { CgSun } from 'react-icons/cg';

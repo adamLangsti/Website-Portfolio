@@ -2,6 +2,10 @@
 @import 'colors';
 @import 'mixin';
 @import 'functions';
+@import 'header';
+@import 'mainContent';
+@import 'footer';
+@import 'socialMedia';
 
 html,
 body {
@@ -34,113 +38,11 @@ ul {
   list-style: none;
 }
 
-.header {
-  @include clamp-width;
-  border-bottom: 1px solid $border-color;
-  overflow: hidden;
-  &-container {
-    margin: 0 auto;
-  }
-  &-greeting-wrapper {
-    display: flex;
-    justify-content: center;
-    border: 2px;
-    min-height: 10em;
-  }
-  h1 {
-    font-size: 56px;
-    font-weight: weight('bold');
-  }
-}
-
-.content {
-  border-bottom: 1px solid $border-color;
-  height: $sectionHeight;
-  padding-bottom: 30px;
-  h2 {
-    font-weight: weight('bold');
-    font-size: 36px;
-  }
-  h3 {
-    font-weight: weight('bold');
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.4rem;
-  }
-  h4 {
-    font-size: 24px;
-  }
-  &-container {
-    @extend .header-container;
-    @include clamp-width;
-  }
-  &-skills {
-    display: flex;
-    align-items: center;
-    width: clamp(375px, 50%, 100%);
-    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.75);
-    li {
-      text-align: left;
-      font-family: 'Roboto Mono', monospace;
-    }
-  }
-  img {
-    display: block;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 2px solid $border-color;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  }
-}
-
-.footer {
-  @include clamp-width;
-  h5 {
-    text-align: center;
-    font-size: 28px;
-  }
-}
-
 hr {
   height: 2px;
   background-color: $secondary-text;
 }
 
-.contact-form {
-  display: flex;
-  justify-content: center;
-  max-width: 200px;
-  margin: 0 auto;
-  border: 1px solid $border-color;
-  padding: 15px;
-  border-radius: 5px;
-  background-color: $main-color;
-  margin-bottom: 50px;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  .icon {
-    margin: 3px;
-    height: 40px;
-    width: 40px;
-    &:hover {
-      color: #0078b4de;
-    }
-    &-git {
-      @extend .icon;
-      color: #575757;
-      &:hover {
-        color: #636363;
-      }
-    }
-    &-mail {
-      @extend .icon;
-      color: #63a000;
-      &:hover {
-        color: #70b600;
-      }
-    }
-  }
-}
 // query to give footer space from content container
 @media screen and (max-width: 1563px) {
   .content {

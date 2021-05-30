@@ -1,0 +1,18 @@
+.header {
+  @include clamp-width;
+  border-bottom: 1px solid $border-color;
+  overflow: hidden;
+  &-container {
+    margin: 0 auto;
+  }
+  &-greeting-wrapper {
+    display: flex;
+    justify-content: center;
+    border: 2px;
+    min-height: 10em;
+  }
+  h1 {
+    font-size: 56px;
+    font-weight: weight('bold');
+  }
+}

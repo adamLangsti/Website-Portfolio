@@ -1,0 +1,34 @@
+.contact-form {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  margin: 0 auto;
+  border: 1px solid $border-color;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: $main-color;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  .icon {
+    margin: 3px;
+    height: 40px;
+    width: 40px;
+    &:hover {
+      color: #0078b4de;
+    }
+    &-git {
+      @extend .icon;
+      color: #575757;
+      &:hover {
+        color: #636363;
+      }
+    }
+    &-mail {
+      @extend .icon;
+      color: #63a000;
+      &:hover {
+        color: #70b600;
+      }
+    }
+  }
+}

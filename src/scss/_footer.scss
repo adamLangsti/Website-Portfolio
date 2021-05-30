@@ -1,0 +1,7 @@
+.footer {
+  @include clamp-width;
+  h5 {
+    text-align: center;
+    font-size: 28px;
+  }
+}

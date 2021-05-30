@@ -1,33 +1,3 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
-
-@media (max-width: 1315px) {
-  html .header h1,
-  body .header h1 {
-    text-align: center;
-    width: 100%;
-  }
-}
-
-h1,
-h2,
-h4,
-h5 {
-  font-family: 'Russo One', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: #0077b5;
-}
-
-ul {
-  list-style: none;
-}
-
 .header {
   width: clamp(375px, 65%, 1440px);
   border-bottom: 1px solid #c1c1c1;
@@ -106,11 +76,6 @@ ul {
   font-size: 28px;
 }
 
-hr {
-  height: 2px;
-  background-color: #4b5156;
-}
-
 .contact-form {
   display: flex;
   justify-content: center;
@@ -148,6 +113,41 @@ hr {
 
 .contact-form .icon-mail:hover {
   color: #70b600;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 1315px) {
+  html .header h1,
+  body .header h1 {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+h1,
+h2,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0077b5;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  height: 2px;
+  background-color: #4b5156;
 }
 
 @media screen and (max-width: 1563px) {
