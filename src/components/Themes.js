@@ -1,13 +1,13 @@
-export const lightTheme = {
+const lightTheme = {
     pageBackground: '#fff',
     fontColor: '#292929',
-    toggleColor: "#576675"
+    toggleColor: '#576675',
 };
 
-export const darkTheme = {
+const darkTheme = {
     pageBackground: '#292929',
     fontColor: '#fff',
-    toggleColor: "#cacaca"
+    toggleColor: '#cacaca',
 };
 
 export const themes = {
